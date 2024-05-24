@@ -16,5 +16,5 @@ This extracted model is now split into training and testing data of test data co
 # 4.Model Selection
 The model used here is Support Vector Machines (SVMs)
 
-After identifying the language for a given example test case, we have consider another situation for code switching that contains 2 or more languages in a given text.
-To correctly predict language in code switched text we have used a standalone library called langid to identify the language.
+#After identifying the language for a given example test case, we have consider another situation for code switching that contains 2 or more languages in a given text.
+#To correctly predict language in code switched text we have used a standalone library called langid to identify the language.
