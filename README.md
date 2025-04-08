@@ -1,19 +1,20 @@
-As part of mini project, me with my team has developed a language identification tool for both text and speech data.
-The text data is obtained from bhasha-abhijnaanam dataset that has the data in the form of unicode consisting of 22 indian languages.
-The step by step procedure to attain the aim of identifying the language accuarately is as follows:
+This tool is designed to accurately identify languages from text and speech data, leveraging the Bhasha Abhijnaanam dataset, which includes 22 Indian languages. The process involves the following steps:
 
-# 1.Preprocessing
-* Word Tokenization
-* Stop word removal
-* Snowball Stemming
+#1. Preprocessing
+Word Tokenization: Split text into individual words.
 
-# 2.Feature Extraction
-TF-IDF (Term Frequency Inverse Document Frequency) : It is count vectorization technique used in extracting the features of text data.
+Stopword Removal: Eliminate common, uninformative words.
 
-# 3.Train Test split
-This extracted model is now split into training and testing data of test data containing 20% and remaining 80% for testing
+Snowball Stemming: Reduce words to their base form using the Snowball Stemmer.
 
-# 4.Model Selection
-The model used here is Support Vector Machines (SVMs)
+#2. Feature Extraction
+TF-IDF (Term Frequency-Inverse Document Frequency): A statistical method to extract relevant features, capturing the importance of words within the dataset.
 
-After identifying the language for a given example test case, we have consider another situation for code switching that contains 2 or more languages in a given text.#To correctly predict language in code switched text we have used a standalone library called langid to identify the language.
+#3. Train-Test Split
+The dataset is split into 80% training and 20% testing data to train and evaluate the model.
+
+#4. Model Selection
+Support Vector Machines (SVMs) are used for classification, providing an effective approach for language identification.
+
+#5. Code Switching
+For code-switched text (where two or more languages are used together), the langid library is employed to detect the individual languages present in the input.
